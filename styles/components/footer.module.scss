@@ -1,0 +1,31 @@
+.footer {
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            font-size: 25pt;
+            margin-right: 1rem;
+            opacity: .8;
+
+            &:hover{
+                opacity: 1;
+            }
+            
+            &.fb{
+                color: #1778F2;
+            }
+            &.yt{
+                color: #FF0000;
+            }
+        }
+    }
+}
