@@ -1,0 +1,19 @@
+.video{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    opacity: .8;
+    transition: .25s ease opacity;
+
+    img{
+        border-radius: 5px;
+        width: 100%;    
+    }
+    h4{
+        margin-top: .5em;
+    }
+
+    &:hover{
+        opacity: 1;
+    }
+}

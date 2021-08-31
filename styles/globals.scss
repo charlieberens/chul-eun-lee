@@ -1,46 +1,68 @@
+@use 'variables' as v;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  
+    font-family: "lato", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+        sans-serif;
+
     font-size: 15pt;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+}
+input,
+textarea {
+    font-family: inherit;
+    outline: none;
+}
+textarea {
+    resize: vertical;
+}
+button {
+    font-family: inherit;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-main{
-  min-height: calc(100vh - 200px);
-  padding: 2em;
+main {
+    min-height: calc(100vh - 200px);
+    padding: 2em;
+
+    &.mc {
+        display: grid;
+        place-items: center;
+    }
 }
-p{
-  line-height: 1.3em;
+
+p {
+    line-height: 1.3em;
+    font-size: 115%;
 }
 
 // Styles
-.regP{
-  max-width: 60ch;
-  margin: 0 auto;
+.regP {
+    max-width: 60ch;
+    margin: 0 auto;
 
-  &:nth-child(n - 1){
-    margin-bottom: 1em;
-  }
+    &:nth-child(n - 1) {
+        margin-bottom: 1em;
+    }
 }
 
-.regSec{
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2em 0;
+.regSec {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em 0;
 
-  &:nth-child(n - 1){
-    margin-bottom: 1em;
-  }
+    &:nth-child(n - 1) {
+        margin-bottom: 1em;
+    }
 }

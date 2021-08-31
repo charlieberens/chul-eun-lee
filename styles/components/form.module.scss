@@ -1,0 +1,36 @@
+@use '../variables.scss' as v;
+
+.form {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 500px;
+
+    .field {
+        padding: 1.15em 1em;
+        margin-bottom: 1em;
+        border-radius: 5px;
+        border: 1px solid v.$grey-border;
+
+        &:focus {
+            border-color: black;
+        }
+    }
+    textarea {
+        min-height: 100px;
+    }
+
+    .buttonCont {
+        display: flex;
+        // justify-content: center;
+        button {
+            padding: 0.75em 1em;
+            border-radius: 5px;
+            color: v.$primary-1;
+            border: 1px solid v.$primary-1;
+            background: none;
+            font-size: 100%;
+            cursor: pointer;
+        }
+    }
+}

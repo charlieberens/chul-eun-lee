@@ -1,0 +1,22 @@
+.content{
+    display: flex;
+
+    max-width: 1000px;
+
+    .imgOuter{
+        margin-right: 2em;
+        width: 400px;
+        position: relative;
+
+        img{
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+
+    .text{
+        h1{
+            margin-bottom: .5em;
+        }
+    }
+}
