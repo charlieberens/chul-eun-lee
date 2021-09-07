@@ -4,7 +4,7 @@
     display: flex;
     flex-flow: column;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
 
     .field {
         padding: 1.15em 1em;
@@ -22,15 +22,21 @@
 
     .buttonCont {
         display: flex;
-        // justify-content: center;
+        // justify-content: flex-end;
         button {
             padding: 0.75em 1em;
             border-radius: 5px;
-            color: v.$primary-1;
-            border: 1px solid v.$primary-1;
-            background: none;
-            font-size: 100%;
+            background: v.$primary-1;
+            // border: 1px solid v.$primary-1;
+            // background: none;
+            border: none;
+            color: white;
+            font-size: 90%;
             cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 }
